@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@300&display=swap');
 
+:root {
+    --sombreamento: rgba(0, 0, 0, 0.7);
+    --sombreamento2: rgba(0, 0, 0, 0.45);
+}
 
 * {
     font-family: 'Poppins', sans-serif;
@@ -8,6 +12,21 @@
     box-sizing: border-box;
 }
 
-.start {
-    background: url(/images/bg-image\ 1.jpg);
+body {
+    background-color: #212121;
+}
+
+.header {
+    background: linear-gradient(var(--sombreamento2), var(--sombreamento2)), url('/images/bg-image\ 1.jpg');
+    height: 85vh;
+}
+
+.apresentacao h1{
+    font-size: 4rem;
+    text-shadow: 3px 3px 6px var(--sombreamento);
+}
+.apresentacao p{
+    font-size: 1.5rem;
+    text-shadow: 3px 3px 6px var(--sombreamento);
+    
 }
