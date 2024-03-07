@@ -1,7 +1,7 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
 :root {
-    --timing: 0.265s;
+    --tempo: 0.265s;
     --iconColor: #00B5F5;
     --accent: #002A8F;
     --bluefade: #0043E0;
@@ -14,12 +14,6 @@
     -webkit-transform: scale($size);
 }
 
-.social-container {
-    width: 400px;
-    margin: 40vh auto;
-    text-align: center;
-}
-
 .social-icons {
     padding: 0;
     list-style: none;
@@ -27,7 +21,7 @@
 
     li {
         display: inline-block;
-        margin: 0.15em;
+        margin: 0.15em 0.7em;
         position: relative;
         font-size: 1.2em;
 
@@ -36,13 +30,12 @@
             position: absolute;
             top: 21px;
             left: 21px;
-            transition: all var(--timing) ease-out;
+            transition: all var(--tempo) ease-out;
         }
     }
 
     a {
         display: inline-block;
-
         &:before {
             @include transformScale;
             content: " ";
@@ -51,12 +44,12 @@
             border-radius: 100%;
             display: block;
             background: linear-gradient(45deg, var(--iconColor), var(--accent));
-            transition: all var(--timing) ease-out;
+            transition: all var(--tempo) ease-out;
         }
 
         &:hover:before {
             transform: scale(0);
-            transition: all var(--timing) ease-in;
+            transition: all var(--tempo) ease-in;
         }
 
         &:hover i {
@@ -65,7 +58,7 @@
             background: -webkit-linear-gradient(45deg, var(--iconColor), var(--accent));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            transition: all var(--timing) ease-in;
+            transition: all var(--tempo) ease-in;
         }
     }
 }
