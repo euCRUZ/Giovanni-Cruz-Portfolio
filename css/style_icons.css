@@ -1,11 +1,11 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+@import url(/css/style.css);
+
 
 :root {
     --tempo: 0.265s;
     --iconColor: #00B5F5;
     --accent: #002A8F;
-    --bluefade: #0043E0;
-    --gradient: #00B5F5;
 }
 
 @mixin transformScale($size: 1) {

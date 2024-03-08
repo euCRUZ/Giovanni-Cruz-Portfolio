@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@300&display=swap');
 
 :root {
-    --sombreamento: rgba(0, 0, 0, 0.7);
-    --sombreamento2: rgba(0, 0, 0, 0.45);
+    --text_color: #B0ADAD;
+    --shadow: rgba(0, 0, 0, 0.7);
+    --shadow2: rgba(0, 0, 0, 0.45);
+    --bluefade: #0043E0;
+    --bluefade2: #3266e0;
+    --gradient: #00B5F5;
 }
 
 * {
@@ -17,7 +21,7 @@ body {
 }
 
 .header {
-    background: linear-gradient(var(--sombreamento2), var(--sombreamento2)), url('/images/bg-image\ 1.jpg');
+    background: linear-gradient(var(--shadow2), var(--shadow2)), url('/images/bg-image\ 1.jpg');
     height: 85vh;
 }
 
@@ -28,10 +32,31 @@ body {
 
 .apresentacao h1{
     font-size: 4rem;
-    text-shadow: 3px 3px 6px var(--sombreamento);
+    text-shadow: 3px 3px 6px var(--shadow);
 }
 .apresentacao p{
     font-size: 1.5rem;
-    text-shadow: 3px 3px 6px var(--sombreamento);
-    
+    text-shadow: 3px 3px 6px var(--shadow);
+}
+
+.about_me img {
+    scale: 1.2;
+}
+
+.about_me h2, .stacks h2{
+    font-size: 1.5rem;
+    color: var(--bluefade2);
+}
+
+.about_me h1, .stacks h1{
+    font-size: 2.25rem;
+}
+
+.about_me p {
+    font-size: 1.25rem;
+    color: var(--text_color);
+}
+
+.stacks .card {
+    max-width: 540px;
 }
