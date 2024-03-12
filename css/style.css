@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@300&display=swap');
 @import url('/css/style_icons.css');
 
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+  }
+
 :root {
     --text_color: #B0ADAD;
     --card_color: #292C36;
@@ -59,10 +65,64 @@ body {
     color: var(--text_color);
 }
 
-.card_stack {
+.stacks .card {
     background-color: var(--card_color);
-    max-width: 500px;
+    max-width: 31.25rem;;
+    font-size: 1.5em;
 }
+
+.card_stack::before {
+    content: '';
+    width: 101%;
+    height: 102%;
+    border-radius: 0.375rem;
+    background-image: linear-gradient(
+    var(--rotate)
+    , #5ddcff, var(--bluefade2) 43%, #4e00c2);
+    position: absolute;
+    z-index: -1;
+    top: -0.9%;
+    left: -0.5%;
+    animation: spin 2.5s linear infinite;
+}
+
+.card_stack::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(0.8);
+    background-image: linear-gradient(
+        var(--rotate)
+        , #5ddcff, var(--bluefade2) 43%, #4e00c2);
+        opacity: 1;
+    transition: opacity .5s;
+    animation: spin 2.5s linear infinite;
+}
+
+.card_stack:hover {
+    color: rgb(88 199 250 / 100%);
+    transition: color 1s;
+  }
+  .card.stack:hover:before, .card:hover:after {
+    animation: none;
+    opacity: 0;
+  }
+
+@keyframes spin {
+    0% {
+      --rotate: 0deg;
+    }
+    100% {
+      --rotate: 360deg;
+    }
+  }
+
+/* .card_body {
+    max-width: 100%;
+} */
 
 .card_title {
     color: white;
@@ -75,6 +135,10 @@ body {
     font-size: 1.15rem;
 }
 
-/* .card_body {
-    max-width: 100%;
-} */
+.projects .card {
+    border-color: var(--card_color);
+}
+
+.card_project, footer {
+    background-color: var(--card_color);
+}
