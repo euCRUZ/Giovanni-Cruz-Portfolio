@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@300&display=swap');
+@import url('/css/style_icons.css');
 
 :root {
     --text_color: #B0ADAD;
+    --card_color: #292C36;
     --shadow: rgba(0, 0, 0, 0.7);
     --shadow2: rgba(0, 0, 0, 0.45);
     --bluefade: #0043E0;
@@ -43,12 +45,12 @@ body {
     scale: 1.2;
 }
 
-.about_me h2, .stacks h2{
+.about_me h2, .stacks h2, .projects_initial_title h2{
     font-size: 1.5rem;
     color: var(--bluefade2);
 }
 
-.about_me h1, .stacks h1{
+.about_me h1, .stacks h1, .projects_initial_title h{
     font-size: 2.25rem;
 }
 
@@ -57,6 +59,22 @@ body {
     color: var(--text_color);
 }
 
-.stacks .card {
-    max-width: 540px;
+.card_stack {
+    background-color: var(--card_color);
+    max-width: 500px;
 }
+
+.card_title {
+    color: white;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+.card_text {
+    color: var(--text_color);
+    font-size: 1.15rem;
+}
+
+/* .card_body {
+    max-width: 100%;
+} */
