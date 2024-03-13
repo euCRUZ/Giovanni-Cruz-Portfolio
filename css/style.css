@@ -30,7 +30,13 @@ body {
 
 .header {
     background: linear-gradient(var(--shadow2), var(--shadow2)), url('/images/bg-image\ 1.jpg');
-    height: 85vh;
+    height: 85vh; 
+}
+
+.header button {
+    background: linear-gradient(45deg, var(--iconColor), var(--accent));
+    color: white;
+    border: none;
 }
 
 .apresentacao {
@@ -67,7 +73,7 @@ body {
 
 .stacks .card {
     background-color: var(--card_color);
-    max-width: 31.25rem;;
+    max-width: 31.25rem;
     font-size: 1.5em;
 }
 

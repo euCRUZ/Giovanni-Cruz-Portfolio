@@ -13,10 +13,8 @@
     <header class="container">
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid mx-5">
-          <a href="/pages/index.html" class="navbar-brand text-light fw-bold">                
-              <img src="" alt="Logo cruz" class="img-fluid logo_salt ">
-              Giovanni Cruz
-          </a>
+          <a href="index.html" class="navbar-brand text-light fw-bold">
+            <img src="" alt="Logo cruz" class="img-fluid logo_salt"></a>
   
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon menu"></span>
@@ -26,88 +24,65 @@
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navbar-nav-scroll fw-bold" style="--bs-scroll-height: 100px;">
   
               <li class="nav-item">
-                <a class="nav-link item_menu text-light" href="#">SOBRE</a>
+                <a class="nav-link item_menu text-light" href="#sobre_mim">SOBRE MIM</a>
               </li>
   
               <li class="nav-item">
-                <a class="nav-link item_menu text-light" href="#">O QUE FAÇO</a>
+                <a class="nav-link item_menu text-light" href="#minhas_stacks">O QUE FAÇO</a>
               </li>
   
               <li class="nav-item">
-                <a class="nav-link item_menu text-light" href="#">TRABALHO</a>
+                <a class="nav-link item_menu text-light" href="#projetos">PROJETOS</a>
               </li>
   
-              <li class="nav-item">
-                <a class="nav-link item_menu text-light" href="#">CONTATO</a>
-              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link item_menu text-light" href="#contato">CONTATO</a>
+              </li> -->
             </ul>
           </div>
         </div>
       </nav>
     </header>
 
-    <section class="container text-light d-flex flex-column justify-content-center align-items-center apresentacao">
-      <h1 class="text-center fw-bold mb-4">Giovanni Cruz</h1>
-      <p class="text-center fw-semibold">Full-Stack developer / Social Media manager</p>
-    </section>  
-
-    <div class="container social-container text-center">
-      <ul class="social-icons">
-          <li><a href="https://www.instagram.com/eugiovannicruz/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-          <li><a href="https://github.com/euCRUZ" target="_blank"><i class="fa fa-github"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/eugiovannicruz/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-      </ul>
-    </div>  
+    <div class="container pt-sm-5 mt-sm-5 pt-xxl-0 mt-xxl-0">
+      <div class="container mt-sm-4 mt-xxl-0">
+        <!-- TEXTOS -->
+        <section class="container text-light d-flex flex-column justify-content-center align-items-center apresentacao">
+          <h1 class="text-center fw-bold mb-4">Giovanni Cruz</h1>
+          <p class="text-center fw-semibold">Full-Stack developer / Social Media manager</p>
+        </section>  
+      
+      /<!-- SOCIAL MEDIA -->
+        <div class="container social-container text-center">
+          <ul class="social-icons">
+              <li><a href="https://www.instagram.com/eugiovannicruz/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="https://github.com/euCRUZ" target="_blank"><i class="fa fa-github"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/eugiovannicruz/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div> 
+      </div>
+    </div>
   </section>
     
-  <section class="container my-5 pt-md-2 py-lg-4 about_me">
-    <div class="row d-flex justify-content-center my-5">
-      <div class="col-lg-6 mb-5 d-flex justify-content-lg-end">
+  <section class="container my-5 pt-md-2 py-lg-4 about_me" id="sobre_mim">
+    <div class="row d-flex justify-content-center my-5 pt-5">
+      <!-- IMAGEM -->
+      <div class="col-lg-6 mb-5 d-flex justify-content-center">
           <img src="/images/@eugiovannicruz.png" alt="Giovanni Cruz" class="img-fluid">
       </div>
 
-      <div class="col-lg-6 text-lg-start text-md-center mt-3 mb-5">
+      <!-- TEXTOS -->
+      <div class="col-lg-6 text-lg-start text-sm-center mt-lg-3 mt-sm-5 mb-lg-5">
           <h2 class="fw-bold mb-4">SOBRE MIM</h2>
           <h1 class="text-light mb-1 fw-bold">Sou o Gi</h1>
-          <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quaerat placeat illo repellat incidunt dignissimos labore fugit veniam ipsam fugiat aperiam, ea itaque facere corrupti.</p>
+          <p class="my-4 pt-sm-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quaerat placeat illo repellat incidunt dignissimos labore fugit veniam ipsam fugiat aperiam, ea itaque facere corrupti.</p>
           <p>Eaque quam exercitationem rem laboriosam similique cum excepturi optio natus enim voluptatum! Placeat ea ratione nesciunt in non commodi deleniti. Minus fugiat nostrum cum accusantium.</p>
       </div>
     </div>
   </section>
 
-  <!-- <section class="container stacks">
-    <div class="stacks_text mb-5">
-      <h2 class="fw-bold mb-4 text-center fw-bold">NO QUE ME</h2>
-      <h1 class="text-light mb-1 fw-bold text-center fw-bolder pb-3">ESPECIALIZO</h1>
-    </div>
-
-    <div class="container d-flex justify-content-evenly">
-    
-      <div class="card card_stack rounded-4">
-        <div class="col-md-4 cards_stacks d-flex ms-5 my-4">
-          <img src="/images/laptop.svg" class="img-fluid" alt="/images/viagem.jpg">
-          <h5 class="card_title fw-bold ms-3 mt-2">Full Stack <br> Development</h5>
-        </div>
-        <div class="card_body mx-4">
-          <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt minus cupiditate id.</p>
-        </div>
-      </div>
-
-      <div class="card card_stack rounded-4">
-        <div class="col-md-4 cards_stacks d-flex ms-5 my-4">
-          <img src="/images/screen.svg" class="img-fluid" alt="...">
-          <h5 class="card_title fw-bold ms-3 mt-2">Social Media</h5>
-        </div>
-        <div class="card_body mx-4">
-          <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt minus cupiditate id.</p>
-        </div>
-      </div>
-
-    </div>
-  </section> -->
-
-  <section class="container stacks mb-2">
-    <div class="stacks_text mb-5">
+  <section class="container stacks my-5 pt-3 pb-5" id="minhas_stacks">
+    <div class="stacks_text mb-5 mt-5 ">
       <h2 class="fw-bold mb-4 text-center fw-bold">NO QUE ME</h2>
       <h1 class="text-light mb-1 fw-bold text-center fw-bolder pb-3">ESPECIALIZO</h1>
     </div>
@@ -126,7 +101,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 pt-sm-4 pt-md-0">
+        <div class="col-md-6 pt-sm-5 pt-md-0">
           <div class="card card_stack ">
             <div class="col-md-4 cards_stacks d-flex ms-5 my-4">
               <img src="/images/screen.svg" class="img-fluid" alt="screen mini-figure">
@@ -141,7 +116,7 @@
     </div>
   </section>
 
-  <section class="container projects py-5">
+  <section class="container projects py-lg-5 pt-sm-3 pb-sm-5" id="projetos">
     <div class="projects_initial_title py-5 ">
       <h2 class="fw-bold mb-4 text-center fw-bold">PORTFOLIO</h2>
       <h1 class="text-light mb-1 fw-bold text-center fw-bolder pb-3">PROJETOS</h1>
@@ -153,28 +128,38 @@
         <div class="card">
           <img src="/images/facchini.png" class="card-img-top" alt="Facchini Advogados website">
           <div class="card-body text-light card_project">
-            <h5 class="card-title">Facchini Advogados</h5>
-            <a href="https://facchiniadvogados.com.br/" class="btn btn-primary" target="_blank">Ver site</a>            
+            <h5 class="card-title fw-bolder">Facchini Advogados</h5>
+            <a href="https://facchiniadvogados.com.br/" class="btn btn-primary mt-3 fw-bolder" target="_blank">Ver site</a>            
           </div>
         </div>
       </div>
 
       <div class="col">
         <div class="card">
-          <img src="/images/fokus.png" class="card-img-top" alt="Fokus website">
+          <img src="/images/fokus.png" class="card-img-top" alt="Facchini Advogados website">
           <div class="card-body text-light card_project">
-            <h5 class="card-title">Fokus</h5>
-            <a href="https://fokus-gamma-three.vercel.app/" class="btn btn-primary" target="_blank">Ver site</a>
+            <h5 class="card-title fw-bolder">Fokus</h5>
+            <a href="https://facchiniadvogados.com.br/" class="btn btn-primary mt-3 fw-bolder" target="_blank">Ver site</a>            
           </div>
         </div>
       </div>
+
+      <!-- <div class="col">
+        <div class="card">
+          <img src="/images/fokus.png" class="card-img-top" alt="Fokus website">
+          <div class="card-body text-light card_project">
+            <h5 class="card-title fw-bolder">Fokus</h5>
+            <a href="https://fokus-gamma-three.vercel.app/" class="btn btn-primary mt-3 fw-bolder" target="_blank">Ver site</a>
+          </div>
+        </div>
+      </div> -->
 
       <div class="col">
         <div class="card">
           <img src="/images/applescreen.png" class="card-img-top" alt="Apple Watch Screen website">
           <div class="card-body text-light card_project">
-            <h5 class="card-title">Apple Watch Screen</h5>
-            <a href="https://apple-watch-screen.vercel.app/" class="btn btn-primary" target="_blank">Ver site</a>            
+            <h5 class="card-title fw-bolder">Apple Watch Screen</h5>
+            <a href="https://apple-watch-screen.vercel.app/" class="btn btn-primary mt-3 fw-bolder" target="_blank">Ver site</a>            
           </div>
         </div>
       </div>
@@ -183,8 +168,8 @@
         <div class="card">
           <img src="/images/salt.png" class="card-img-top" alt="Salt website">
           <div class="card-body text-light card_project">
-            <h5 class="card-title">Salt Fintech</h5>
-            <a href="https://fintech-zeta-five.vercel.app/" class="btn btn-primary" target="_blank">Ver site</a>
+            <h5 class="card-title fw-bolder">Salt Fintech</h5>
+            <a href="https://fintech-zeta-five.vercel.app/" class="btn btn-primary mt-3 fw-bolder" target="_blank">Ver site</a>
           </div>
         </div>
       </div>
@@ -193,8 +178,8 @@
         <div class="card">
           <img src="/images/alurabooks.png" class="card-img-top" alt="AluraBooks Website">
           <div class="card-body text-light card_project">
-            <h5 class="card-title">AluraBooks</h5>
-            <a href="https://alura-books-inky-theta.vercel.app/" class="btn btn-primary" target="_blank">Ver site</a>
+            <h5 class="card-title fw-bolder">AluraBooks</h5>
+            <a href="https://alura-books-inky-theta.vercel.app/" class="btn btn-primary mt-3 fw-bolder" target="_blank">Ver site</a>
           </div>
         </div>
       </div>
@@ -203,8 +188,8 @@
         <div class="card">
           <img src="/images/jcruzassessoria.png" class="card-img-top" alt="JCRUZ Assessoria website">
           <div class="card-body text-light card_project">
-            <h5 class="card-title">JCRUZ Assessoria</h5>
-            <a href="https://jcruzassessoria.com.br/" class="btn btn-primary" target="_blank">Ver site</a>
+            <h5 class="card-title fw-bolder">JCRUZ Assessoria</h5>
+            <a href="https://jcruzassessoria.com.br/" class="btn btn-primary mt-3 fw-bold" target="_blank">Ver site</a>
           </div>
         </div>
       </div>
