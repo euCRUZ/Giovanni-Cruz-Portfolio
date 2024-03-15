@@ -151,6 +151,11 @@ body {
     font-size: 1.15rem;
 }
 
+.projects p {
+    font-size: 1.25rem;
+    color: var(--text_color);
+}
+
 .card_project {
     border: none;
     border-color: var(--card_color);
