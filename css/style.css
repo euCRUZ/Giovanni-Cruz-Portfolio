@@ -187,9 +187,9 @@ footer {
     background-color: var(--card_color);
 }
 
-/* @media screen and (min-width: 576px) {
-    card_stacks {
-        margin-bottom: 2rem;
+@media screen and (max-width: 576px) {
+    .stacks .card {
+        margin-bottom: 20rem;
     }
     
-} */
+}
