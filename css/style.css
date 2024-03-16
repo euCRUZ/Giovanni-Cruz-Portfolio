@@ -86,7 +86,9 @@ body {
 
 .stacks .card {
     background-color: var(--card_color);
-    max-width: 31.25rem;
+    width: 31rem;
+    height: 17rem;
+    margin-bottom: 2.5rem;
     font-size: 1.5em;
     transition: 0.5s;
 }
@@ -184,3 +186,10 @@ body {
 footer {
     background-color: var(--card_color);
 }
+
+/* @media screen and (min-width: 576px) {
+    card_stacks {
+        margin-bottom: 2rem;
+    }
+    
+} */
