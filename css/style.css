@@ -36,18 +36,24 @@ body {
 
 .header {
     background: linear-gradient(var(--shadow2), var(--shadow2)), url('/images/bg-image\ 1.jpg');
-    height: 85vh; 
+    background-attachment: fixed;
+    height: 95vh; 
 }
 
 .header button {
-    background: linear-gradient(45deg, var(--iconColor), var(--accent));
+    background-color: var(--gradient);
     color: white;
     border: none;
 }
 
+.father {
+    height: 70%;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+}
+
 .apresentacao {
     padding: 10% 0 1% 0;
-    margin-top: -2%;
 }
 
 .apresentacao h1{
@@ -87,7 +93,7 @@ body {
 .stacks .card {
     background-color: var(--card_color);
     max-width: 31rem;
-    max-height: 19rem;
+    height: 17rem;
     
     font-size: 1.5em;
     transition: 0.5s;
@@ -168,7 +174,7 @@ body {
     }
 
     &:hover {
-        box-shadow: 0 0 1rem 0.2rem rgb(4, 5, 5);
+        box-shadow: 0 0 1rem 0.2rem rgb(71, 73, 73);
         background-color: rgb(26, 26, 26);
         & img {
             filter: none;
@@ -188,12 +194,87 @@ footer {
 }
 
 @media (max-width: 576px) {
+    .header {
+        height: 93vh;
+    }
+
+    .father {
+        margin-top: 2rem;
+    }   
+    
+    .father h1, .father p{
+        margin-bottom: 5rem;
+    }   
+
+    .social-container {
+        margin-top: 2rem;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .about_me h1, .about_me h2 {
+        text-align: center;
+    }
+
+    .about_me h1 {
+        margin-bottom: 3rem;
+    }
+
+    .about_me p {
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align:justify;
+    }
+
     .stacks .card {
         margin-bottom: 2.5rem;
     }
 
+    .stacks .card_body {
+        margin: 0 1rem 0 1rem;
+    }
+
+    .projects_grid {
+        margin: 0 0.5rem 0 0.5rem;
+    }
+
+    .col {
+        width: 50%;
+    }
+
     .card_project {
-        max-width: calc(50% - 20px);
+        margin-top: 0.5rem;
+    }
+    
+    .card_project h5 {
+        font-size: 1.05rem;
+        height: 3.125rem;
+    }
+
+    .card_project a{
+        font-size: 0.9rem;
     }
     
 }
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        backdrop-filter: blur(5px);
+        border-radius: 0 0 6px 6px;
+        margin-top: 1rem;
+        padding: 0 0.2rem 0 1rem;
+    }
+
+    .navbar-collapse a {
+        filter: none;
+    }
+
+    .card_project img {
+        filter: none;
+    }    
+}
+
+    
