@@ -1,0 +1,81 @@
+.projects p {
+    font-size: 1.25rem;
+    color: var(--text_color);
+}
+
+.card_project {
+    border: none;
+    transition: 0.5s;
+    & img {
+        filter: blur(3px);
+    }
+
+    &:hover {
+        transform: scale(1.03);
+        z-index: 1;
+        box-shadow: 0 0 1rem 0.2rem rgb(71, 73, 73);
+        background: rgb(14, 14, 15);
+        transition: 0.5s;
+        & img {
+            filter: none;
+        }
+    }
+}
+
+.btn {
+    border-color: var(--gradient);
+    background-color: var(--gradient);
+    color: white;
+    border: none;
+    transition: 0.25s;
+    margin-top: 0.7rem;
+} 
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    display: none;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: 0.6em 0;
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .swiper-pagination {
+        margin: 2em 0rem 3em 0rem;
+    }
+
+    .swiper{
+        width: 75%;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+        display: block;
+        top: 60%;
+    }
+
+}
+
+@media screen and (min-width: 1728px) {
+
+    .carrossel_container {
+        display: flex;
+        margin: 0 2vw 3em 2vw;
+        align-items: center;
+    }
+
+    .swiper-pagination {
+        margin: 2em 0;
+    }
+
+    .swiper{
+        width: 60%;
+    }
+
+}
