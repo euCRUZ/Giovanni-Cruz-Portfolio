@@ -89,11 +89,15 @@ body {
 }
 
 .stacks .card {
-    max-width: 31rem;
-    height: 17rem;
+    max-width: 45rem;
     font-size: 1.5em;
     transition: 0.5s;
-}
+} .card_stack_1 {
+        height: 17rem;
+    }
+    .card_stack_2 {
+        height: 17rem;
+    }
 
 .card_text{
     padding-left: 1rem;
@@ -164,15 +168,15 @@ body {
 }
 
 
-@media (max-width: 416px) {
-    #card_stack_1 {
-        height: 20rem;
-    }
+/* @media (max-width: 416px) {
+    .card_stack_1 {
+        height: 30rem;
+    } 
 
     .card_text {
         padding-left: 0.05rem;
     }
-}
+} */
 
 @media (max-width: 576px) {
     .header {
@@ -222,20 +226,20 @@ body {
         margin-bottom: 1.2rem;
     }
 
-    .card_text {
+    /* .card_text {
         margin-left: 1rem;
-    }
+    } */
 
-    .col {
+    /* .col {
         width: 50%;
-    }
+    } */
 
     .card_project {
         margin-top: 0.5rem;
     }
     
     .card_project h5 {
-        font-size: 1.05rem;
+        font-size: 1rem;
         height: 3.125rem;
         margin-bottom: 0.5rem;
     }
@@ -244,6 +248,12 @@ body {
         font-size: 0.9rem;
     }
     
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .card_stack_1, .card_stack_2 {
+        height: 20rem;
+    }
 }
 
 @media (max-width: 991px) {
